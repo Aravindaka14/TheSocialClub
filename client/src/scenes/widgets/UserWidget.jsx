@@ -23,7 +23,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
 
     const getUser = async () => {
-        const response = await fetch(`http://localhost:3014/users/${userId}`,
+        const response = await fetch(`https://thesocialclub.onrender.com/users/${userId}`,
             {
                 method: "GET",
                 headers: {

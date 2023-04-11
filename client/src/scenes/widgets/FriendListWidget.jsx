@@ -14,7 +14,7 @@ const FriendListWidget = ({ userId }) => {
     // console.log(friends)
     const getFriends = async () => {
         const response = await fetch(
-            `http://localhost:3014/users/${userId}/friends`,
+            `https://thesocialclub.onrender.com/users/${userId}/friends`,
             {
                 method: "GET",
                 headers: {
