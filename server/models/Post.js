@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const postSchema = new mongoose.Schema({
+const postSchema = mongoose.Schema({
     userId: {
         type: String,
         required: true,
@@ -19,11 +19,11 @@ const postSchema = new mongoose.Schema({
     userPicturePath: String,
     likes: {
         type: Map,
-        of: Boolean
+        of: Boolean,
     },
     comments: {
         type: Array,
-        default: []
+        default: [],
     }
 },
     {
